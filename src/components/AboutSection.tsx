@@ -23,24 +23,24 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBookingModal }
             className="lg:col-span-5 relative"
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Primary Image: Real D3 Unisex Salon Storefront */}
-              <div className="relative aspect-[4/3] sm:aspect-[4/5] rounded-xl overflow-hidden border border-[#262633] shadow-2xl">
+              {/* Primary Image: Real D3 Unisex Salon Storefront (Bright & Visible) */}
+              <div className="relative aspect-[4/3] sm:aspect-[4/5] rounded-xl overflow-hidden border border-[#2E2E3E] shadow-2xl bg-[#14141C]">
                 <SalonImage
                   src={BUSINESS_INFO.storefrontImage}
                   alt="D3 Unisex Salon storefront and signboard in Dibrugarh, Assam"
-                  className="w-full h-full object-cover filter brightness-[0.95] contrast-[1.05]"
+                  className="w-full h-full object-cover filter brightness-[1.14] contrast-[1.03] saturate-[1.06]"
                   fallbackTitle="D3 Unisex Salon Storefront"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0C0C0E]/85 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent pointer-events-none" />
                 
                 {/* Storefront caption badge */}
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-white">
                   <div>
-                    <span className="font-serif text-sm font-medium block">D3 Unisex Salon</span>
-                    <span className="text-[11px] text-[#C5A059] font-light">ডি৩ ইউনিচেক্স চেলুন · P N Road, Dibrugarh</span>
+                    <span className="font-serif text-sm font-medium block drop-shadow-md">D3 Unisex Salon</span>
+                    <span className="text-[11px] text-[#C5A059] font-light drop-shadow-md">ডি৩ ইউনিচেক্স চেলুন · P N Road, Dibrugarh</span>
                   </div>
-                  <span className="px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[10px] text-[#DDD] border border-white/10">
-                    Real Storefront
+                  <span className="px-2.5 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] text-[#EEE] border border-white/20 font-medium shadow-md">
+                    Storefront Entrance
                   </span>
                 </div>
               </div>

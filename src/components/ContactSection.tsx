@@ -100,15 +100,15 @@ export const ContactSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Storefront Visual Thumbnail for Easy Recognition */}
-              <div className="relative aspect-[16/10] rounded-lg overflow-hidden border border-[#2A2A3A] mb-5">
+              {/* Storefront Visual Thumbnail for Easy Recognition (Bright & Clear) */}
+              <div className="relative aspect-[16/10] rounded-xl overflow-hidden border border-[#333345] mb-5 shadow-lg bg-[#14141C]">
                 <img
                   src={BUSINESS_INFO.storefrontImage}
                   alt="D3 Unisex Salon Storefront Signboard on P N Road"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover filter brightness-[1.15] contrast-[1.03] saturate-[1.08]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <span className="absolute bottom-2.5 left-3 text-xs text-white font-medium bg-black/70 px-2.5 py-1 rounded backdrop-blur-sm border border-white/10">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                <span className="absolute bottom-2.5 left-3 text-xs text-white font-medium bg-black/80 px-2.5 py-1 rounded backdrop-blur-md border border-white/20 shadow-md">
                   Storefront Signboard on P N Road
                 </span>
               </div>

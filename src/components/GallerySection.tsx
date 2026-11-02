@@ -99,12 +99,12 @@ export const GallerySection: React.FC = () => {
                 <SalonImage
                   src={photo.image}
                   alt={photo.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-106 filter brightness-[0.92] group-hover:brightness-100"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-106 filter brightness-[1.10] contrast-[1.02]"
                   fallbackTitle={photo.title}
                 />
                 
-                {/* Vignette Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0C0C0E] via-[#0C0C0E]/40 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300" />
+                {/* Soft Vignette Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0C0C0E]/80 via-[#0C0C0E]/15 to-transparent opacity-40 group-hover:opacity-80 transition-opacity duration-300" />
 
                 {/* Top badges */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
